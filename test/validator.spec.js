@@ -42,3 +42,10 @@ describe('validator', () => {
     });
   });
 });
+
+describe('Esto es una coeccion de test facilees',()=>{
+  test("una descripcion de lo que hace",()=>{
+    const nombre="Rosa Arellano"
+    expect(nombre).toBe("Rosa Arellanos")
+  })
+})
