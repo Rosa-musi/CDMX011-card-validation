@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,20 +15,25 @@
     <main>
       <div class="main_continer">
         <div class="data">
-            <div id="enterData" class="main_enterData">
-              <p class="main_text">Bienvenid@</p> 
-              <p class="main_text">Ingresa por favor tu número de tarjeta para validarla</p> 
-                <input type="text" id="inputGet" placeholder="Tu número de tarjeta" maxlength="16">
-                <button class="button" type="button" id="get">Validar</button>
-            </div> 
-            <div id="invalid" class="main_responseInvalid main_enterData">
-              <p>Tu tarjeta no ha pasado la validación, puedes intentar nuevamente o comunicarte con el servicio de soporte de tu tarjeta.</p>
+          <div id="enterData" class="main_enterData">
+            <p class="main_text padding">Bienvenid@</p> 
+            <p class="main_text pdding">Ingresa por favor tu número de tarjeta para validarla</p> 
+            <input class="padding" type="text" id="inputGet" placeholder="Tu número de tarjeta" maxlength="16">
+            <button class="button padding" type="button" id="get">Validar</button>
+          </div> 
+          <div id="response" class="main_enterData responseDiv">
+            <p class="padding">Tu tarjeta con terminación</p>
+            <div class="creditCard padding">
+              <img class="icon iconResponse" src="images/icons8-chip-de-tarjeta-sim-64.png" alt="credit card">
+              <p class="padding" id="displayCardNum"># de tarjeta</p>
             </div>
-            <div id="valid" class="main_responseOk main_enterData">
-              <p>Tu tarjeta se ha validado correctamente.</p>
-            </div>
-            <button class="button homeButton" type="button" id="homeButton">Validar <br> nuevo número</button>
-          <img src="images/credit_card_front.png" alt="credit card">
+            <p class="padding" id="responseMessege">Válida o no</p>
+          </div>
+          <button class="button homeButton padding" type="button" id="homeButton">Validar <br> nuevo número</button>
+          <div class="creditCardHome" id="Card">
+            <img class="icon" src="images/icons8-chip-de-tarjeta-sim-64.png" alt="credit card">
+            <p class="cardDigits">#### #### #### ####</p>
+          </div>
         </div>
       </div>
     </main>
@@ -35,3 +41,32 @@
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

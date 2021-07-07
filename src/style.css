@@ -9,6 +9,8 @@
 
 body {
     background-color: #E7D2CC;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
 }
 
 .header_container {
@@ -20,11 +22,13 @@ body {
     height: 100px;
     margin: auto;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .header_title {
     color: #fff;
     text-align: center;
+    letter-spacing: 6px;
 }
 
 .main_continer{
@@ -33,7 +37,7 @@ body {
     justify-content: center;
     background-color: #032940;
     width: 70%;
-    height: 600px;
+    height: auto;
     margin: 20px auto;
     border-radius: 20px;
 }
@@ -49,20 +53,30 @@ body {
     border-radius: 20px;
     width: 70%;
     height: 70%;
+    padding: 20px;
+    font-size: 20px;
 }
+
 .main_enterData {
     display:flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    font-size: 15px;
 }
 
-.main_responseInvalid { 
-    display: none;
-} 
+input {
+    padding: 5px;
+    border-radius: 10px;
+}
+.padding {
+    margin: 20px;
+}
 
-.main_responseOk {
+.responseDiv {
     display: none;
 }
+
 .button {
     cursor: pointer;
     padding: 8px;
@@ -77,11 +91,41 @@ body {
 .homeButton{
     display: none;
     background-color: #ebe7e6;
+    margin-bottom: 10px;
 }
 
-img {
-    width: 40%;
-    display: block;
-    filter: opacity(50%);
+.creditCard {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 190px;
+    border: 1px solid #032940;
+    background-color: #03294050;
     border-radius: 14px;
+}
+
+.creditCardHome {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 200px;
+    border: 1px solid #032940;
+    background-color: #03294050;
+    border-radius: 14px;
+}
+
+.icon{
+    display: block;
+    margin-left: 4px;
+    filter: opacity(80%);
+}
+
+.iconResponse {
+    width: 15%;
+}
+
+.cardDigits{
+    align-self: center;
+    display: block;
+    margin-left: 34px;
 }
