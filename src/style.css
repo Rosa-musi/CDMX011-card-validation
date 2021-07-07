@@ -9,8 +9,6 @@
 
 body {
     background-color: #E7D2CC;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
 }
 
 .header_container {
@@ -26,6 +24,7 @@ body {
 }
 
 .header_title {
+    font-family: 'Oswald', sans-serif;
     color: #fff;
     text-align: center;
     letter-spacing: 6px;
@@ -35,6 +34,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     background-color: #032940;
     width: 70%;
     height: auto;
@@ -54,7 +55,6 @@ body {
     width: 70%;
     height: 70%;
     padding: 20px;
-    font-size: 20px;
 }
 
 .main_enterData {
@@ -62,6 +62,11 @@ body {
     flex-direction: column;
     align-items: center;
     display: flex;
+    font-size: 20px;
+}
+
+.noSpace_text {
+    font-weight: normal;
     font-size: 15px;
 }
 
@@ -85,7 +90,7 @@ input {
 
 .button:hover {
     color: #fff;
-    background-color: #2c5773;
+    background-color: #032940;
 }
 
 .homeButton{
@@ -128,4 +133,21 @@ input {
     align-self: center;
     display: block;
     margin-left: 34px;
+}
+.footer_container {
+    display: flex;
+  
+    background-color: #032940;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.text_footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    padding: 20px;
 }

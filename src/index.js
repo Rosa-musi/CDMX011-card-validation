@@ -12,27 +12,28 @@ let homeCreditCard = document.getElementById('Card')
 
 get.addEventListener('click', () => {
     cardNumIn = inputGet.value
-    let maskifyResponse = validator.maskify(cardNumIn)
-    let validatorResponse = validator.isValid(cardNumIn)
-    homeCreditCard.style.display = "none"
+    if (cardNumIn == "") {
+        alert("No puedes validar un campo vacío, ingresa un número por favor")
+    }else {
+        let maskifyResponse = validator.maskify(cardNumIn)
+        let validatorResponse = validator.isValid(cardNumIn)
+        homeCreditCard.style.display = "none"
 
-    if (validatorResponse === true) {
-        enterData.style.display = "none"
-        response.style.display = "flex"
-        displayCardNum.innerHTML = maskifyResponse
-        responseMessege.innerHTML = "Se ha validado correctamente" 
-        homeButton.style.display = "flex"
+        if (validatorResponse === true) {
+            enterData.style.display = "none"
+            response.style.display = "flex"
+            displayCardNum.innerHTML = maskifyResponse
+            responseMessege.innerHTML = "Se ha validado correctamente" 
+            homeButton.style.display = "flex"
 
-    } else {
-        enterData.style.display = "none"
-        response.style.display = "flex"
-        displayCardNum.innerHTML = maskifyResponse
-        responseMessege.innerHTML = "no ha pasado la validación, puedes intentar nuevamente o comunicarte con el servicio de soporte de tu tarjeta." 
-        homeButton.style.display = "flex"
+        } else {
+            enterData.style.display = "none"
+            response.style.display = "flex"
+            displayCardNum.innerHTML = maskifyResponse
+            responseMessege.innerHTML = "no ha pasado la validación, puedes intentar nuevamente o comunicarte con el servicio de soporte de tu tarjeta." 
+            homeButton.style.display = "flex"
+        }
     }
-
-    console.log(validatorResponse)
-
 })
 
 homeButton.addEventListener('click', () => {
@@ -47,6 +48,3 @@ homeButton.addEventListener('click', () => {
 
 
 
-//aquí hacer todas las llamadas al DOM
-
-//console.log(validator);
