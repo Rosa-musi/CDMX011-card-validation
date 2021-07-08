@@ -38,6 +38,20 @@ const validator = {
         return number
     }
    
+  },
+
+  getIssuer: function(cardNumBank){
+    let number = cardNumBank
+    let firstTwoNumb = cardNumBank.slice(0, 1)
+    if(number.startsWith("4")){
+      return ("Visa")
+    } else if (firstTwoNumb == "51" | "52" | "53" | "54" | "55" ) {
+      return ("Master Card")
+    } else if (number.startsWith("37")){
+      return("American Express")
+    } else if (number.startsWith("6011")) {
+      return ("Discover")
+    }
   }
 };
 

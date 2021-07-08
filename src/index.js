@@ -1,29 +1,32 @@
 import validator from './validator.js';
 
 let cardNumIn
-let inputGet = document.getElementById('inputGet')
-let get = document.getElementById('get')
-let response = document.getElementById('response')
-let enterData = document.getElementById('enterData')
-let homeButton = document.getElementById('homeButton')
-let displayCardNum = document.getElementById('displayCardNum')
-let responseMessege = document.getElementById('responseMessege')
-let homeCreditCard = document.getElementById('Card')
+const inputGet = document.getElementById('inputGet')
+const get = document.getElementById('get')
+const response = document.getElementById('response')
+const enterData = document.getElementById('enterData')
+const homeButton = document.getElementById('homeButton')
+const displayCardNum = document.getElementById('displayCardNum')
+const responseMessege = document.getElementById('responseMessege')
+const homeCreditCard = document.getElementById('Card')
+const issuer = document.getElementById('issuer')
 
 get.addEventListener('click', () => {
     cardNumIn = inputGet.value
     if (cardNumIn == "") {
         alert("No puedes validar un campo vacío, ingresa un número por favor")
     }else {
-        let maskifyResponse = validator.maskify(cardNumIn)
         let validatorResponse = validator.isValid(cardNumIn)
+        let maskifyResponse = validator.maskify(cardNumIn)
+        let issuerResponse = validator.getIssuer(cardNumIn)
         homeCreditCard.style.display = "none"
 
         if (validatorResponse === true) {
             enterData.style.display = "none"
             response.style.display = "flex"
+            issuer.innerHTML = issuerResponse
             displayCardNum.innerHTML = maskifyResponse
-            responseMessege.innerHTML = "Se ha validado correctamente" 
+            responseMessege.innerHTML = "Se ha validado correctamente"
             homeButton.style.display = "flex"
 
         } else {
