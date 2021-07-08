@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body {
+    background-color: #E7D2CC;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #032940;
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.header_title {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.main_continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #032940;
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8AA1BF;
+    top: 200px;
+    margin: 80px auto;
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+}
+
+.main_enterData {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.noSpace_text {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+}
+.padding {
+    margin: 20px;
+}
+
+.responseDiv {
+    display: none;
+}
+
+.button {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #032940;
+}
+
+.homeButton{
+    display: none;
+    background-color: #ebe7e6;
+    margin-bottom: 10px;
+}
+
+.creditCard {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 190px;
+    border: 1px solid #032940;
+    background-color: #03294050;
+    border-radius: 14px;
+}
+
+.creditCardHome {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 200px;
+    border: 1px solid #032940;
+    background-color: #03294050;
+    border-radius: 14px;
+}
+
+.icon{
+    display: block;
+    margin-left: 4px;
+    filter: opacity(80%);
+}
+
+.iconResponse {
+    width: 15%;
+}
+
+.cardDigits{
+    align-self: center;
+    display: block;
+    margin-left: 34px;
+}
+.footer_container {
+    display: flex;
+  
+    background-color: #032940;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.text_footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    padding: 20px;
+}

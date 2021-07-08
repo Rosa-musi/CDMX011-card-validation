@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <h1 class="header_title">CARD VALIDATOR</h1>
+      </div>
+    </header>
+    <main>
+      <div class="main_continer">
+        <div class="data">
+          <div id="enterData" class="main_enterData">
+            <p class="main_text padding">Bienvenid@</p> 
+            <p class="main_text pdding">Ingresa por favor tu número de tarjeta para validarla</p> 
+            <p class="noSpace_text pdding">recuerda ingresar tu número sin espacios ni guiones</p> 
+            <input class="padding" type="text" id="inputGet" placeholder="Tu número de tarjeta" maxlength="19">
+            <button class="button padding" type="button" id="get">Validar</button>
+          </div> 
+          <div id="response" class="main_enterData responseDiv">
+            <p class="padding">Tu tarjeta <span id="issuer"></span> con terminación:</p>
+            <div class="creditCard padding">
+              <img class="icon iconResponse" src="images/icons8-chip-de-tarjeta-sim-64.png" alt="credit card">
+              <p class="padding" id="displayCardNum"># de tarjeta</p>
+            </div>
+            <p class="padding" id="responseMessege">Válida o no</p>
+          </div>
+          <button class="button homeButton padding" type="button" id="homeButton">Validar <br> nuevo número</button>
+          <div class="creditCardHome" id="Card">
+            <img class="icon" src="images/icons8-chip-de-tarjeta-sim-64.png" alt="credit card">
+            <p class="cardDigits">#### #### #### ####</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <p class="text_footer">Card validator® no guarda tu información bancaria, recuerda mantenerla en un lugar seguro y sólo usarla en sitios autorizados.</p>
+      </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
